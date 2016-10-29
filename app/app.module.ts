@@ -1,5 +1,6 @@
 import { NgModule }      from '@angular/core';
 import { FormsModule }   from '@angular/forms';
+import { MaterialModule } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, ActivatedRoute }   from '@angular/router';
 
@@ -19,7 +20,7 @@ import { Routes } from './router';
 
  
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(Routes)],
+  imports:      [ BrowserModule, MaterialModule, FormsModule, RouterModule.forRoot(Routes)],
   declarations: [ AppComponent, Menu, Home, OneFilm, OtherProjects, Film, AddFilm, FilmList ],
   bootstrap:    [ AppComponent ]
 })
